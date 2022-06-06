@@ -1,10 +1,10 @@
 #include <iostream>
 using namespace std;
 
-float sum(float a, float b);
-float sub(float a, float b);
-float mult(float a, float b);
-float div(float a, float b);
+float addition(float a, float b);
+float subtraction(float a, float b);
+float multiplication(float a, float b);
+float division(float a, float b);
 
 int main()
 {
@@ -26,16 +26,16 @@ int main()
         switch (opr)
         {
         case 1:
-            cout << sum(a, b);
+            cout << addition(a, b);
             break;
         case 2:
-            cout << sub(a, b);
+            cout << subtraction(a, b);
             break;
         case 3:
-            cout << mult(a, b);
+            cout << multiplication(a, b);
             break;
         case 4:
-            cout << sum(a, b);
+            cout << division(a, b);
             break;
 
         default:
@@ -48,20 +48,20 @@ int main()
     }
 }
 
-float sum(float a, float b)
+float addition(float a, float b)
 {
     return a + b;
 }
 
-float sub(float a, float b)
+float subtraction(float a, float b)
 {
     return a - b;
 }
-float mult(float a, float b)
+float multiplication(float a, float b)
 {
     return a * b;
 }
-float div(float a, float b)
+float division(float a, float b)
 {
     return a / b;
 }
