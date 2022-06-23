@@ -1,3 +1,4 @@
+// problems - 2
 #include <iostream>
 using namespace std;
 
@@ -15,16 +16,20 @@ void largestValue(void)
     cout << "Enter the number a , b, c : ";
     cin >> a >> b >> c;
 
-    if (a > b)
+    if (a > b && a > c)
     {
-        cout << "Largest value a ";
+        cout << "Largest value a " << endl;
     }
-    else if (b > c)
+    else if (b > c && b > a)
     {
-        cout << "Largest value b ";
+        cout << "Largest value b " << endl;
+    }
+    else if (c > a && c > b)
+    {
+        cout << "Largest value c " << endl;
     }
     else
     {
-        cout << "Largest value c ";
+        cout << "Value is nothing " << endl;
     }
 }
