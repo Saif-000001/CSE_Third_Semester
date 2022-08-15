@@ -7,7 +7,7 @@ int main()
     int arr[] = {2, 3, 4, 10, 40};
     int n = sizeof(arr) / sizeof(int);
 
-    int result = binarySearch(arr, 0, n - 1, 10);
+    int result = binarySearch(arr, 0, n - 1, 40);
     if (result == -1)
     {
         cout << "Not found ! " << result;
@@ -28,7 +28,7 @@ int binarySearch(int arr[], int low, int high, int x)
         {
             return mid;
         }
-        else if (arr[mid] > x)
+        if (arr[mid] > x)
         {
             return binarySearch(arr, low, mid - 1, x);
         }
