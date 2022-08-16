@@ -1,5 +1,6 @@
 #include <iostream>
-
+// using namespace std;
+void elsIf(int age);
 int main()
 {
     int age;
