@@ -34,6 +34,7 @@ public:
         rear = -1;
         front = -1;
     }
+
     void enqueue(int x);
     void dequeue();
 };
@@ -75,13 +76,13 @@ int main()
     Q.enqueue(7);
     Q.enqueue(6);
     Q.enqueue(5);
-    Q.enqueue(4);
-    Q.enqueue(3);
+    Q.enqueue(9);
     Q.enqueue(3);
 
     std::cout << std::endl;
     Q.dequeue();
     Q.dequeue();
     Q.dequeue();
+
     return 0;
 }

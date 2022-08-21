@@ -1,8 +1,8 @@
 // Algorithm
 /*
     Step 1: Repeat Steps 2 to 3 while root != NULL
-    Step 2: postOrderTraversing(root -> left)
-    Step 3: postOrderTraversing(root -> right)
+    Step 2: call function(root -> left)
+    Step 3: call function(root -> right)
     Step 4: Write root -> data
     [end of loop]
     Step 5: exit
@@ -73,10 +73,10 @@ int main()
     root->left = NULL;
     root->right = NULL;
 
-    insert(&root, 5);
-    insert(&root, 15);
+    insert(&root, 8);
+    insert(&root, 18);
     insert(&root, 3);
-    insert(&root, 13);
+    insert(&root, 15);
 
     postOrderTraversing(root);
 

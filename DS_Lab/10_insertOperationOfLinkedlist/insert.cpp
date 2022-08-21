@@ -13,7 +13,7 @@
     Step-3:new_node->next = NULL;
     Step-4:temp = *head;
     Step-5:if temp->next != NULL then
-    print temp = temp->next;
+     temp = temp->next;
     then go to step 4
     [end loop]
     Step-6:temp->next = new_node;
@@ -76,16 +76,16 @@ int main()
 
     head->data = 10;
     head->next = node1;
-    node1->data = 20;
+    node1->data = 25;
     node1->next = node2;
-    node2->data = 30;
+    node2->data = 35;
     node2->next = NULL;
-    insertBegin(&head, 20);
-    insertBegin(&head, 5);
+    insertBegin(&head, 45);
+    insertBegin(&head, 55);
 
-    insertEnd(&head, 100);
-    insertEnd(&head, 200);
-    insertEnd(&head, 300);
+    insertEnd(&head, 155);
+    insertEnd(&head, 59);
+    insertEnd(&head, 143);
 
     display(head);
 

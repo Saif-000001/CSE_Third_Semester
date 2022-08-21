@@ -72,10 +72,10 @@ int main()
     root->left = NULL;
     root->right = NULL;
 
-    insert(&root, 5);
-    insert(&root, 15);
+    insert(&root, 8);
+    insert(&root, 18);
     insert(&root, 3);
-    insert(&root, 13);
+    insert(&root, 15);
 
     preOrderTraversing(root);
 

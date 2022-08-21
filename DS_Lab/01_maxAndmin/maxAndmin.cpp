@@ -17,7 +17,7 @@ int main()
     int arr[100], n;
     std::cout << "Enter the size of the array : ";
     std::cin >> n;
-    std::cout << "Enter the elements of the array " << n << " :";
+    std::cout << "Enter the elements of the array " << n << " : ";
     for (int i = 0; i < n; i++)
     {
         std::cin >> arr[i];
@@ -27,7 +27,7 @@ int main()
 
 void minMax(int arr[], int n)
 {
-    int max = 0, min = 0;
+    int max = arr[0], min = arr[0];
     for (int i = 0; i < n; i++)
     {
         if (arr[i] > max)

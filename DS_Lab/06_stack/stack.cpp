@@ -77,7 +77,6 @@ int main()
     std::cout << std::endl;
     stk.pop();
     stk.pop();
-    stk.pop();
 
     return 0;
 }
