@@ -25,7 +25,7 @@ int main()
     {
     case 1:
         print(arr, n);
-        break;
+
     case 2:
         int x;
         std::cout << "Enter the position : ";
@@ -37,9 +37,9 @@ int main()
         }
         else
         {
-            std::cout << "found " << x << " in the list at position " << result << " " << std::endl;
+            std::cout << "found " << x << " in the list at position " << result << " \n"
+                      << std::endl;
         }
-        break;
     case 3:
         maxMin(arr, n);
         break;
@@ -75,7 +75,8 @@ void print(int arr[], int n)
     {
         std::cout << arr[i] << " ";
     }
-    std::cout << std::endl;
+    std::cout << "\n"
+              << std::endl;
 }
 
 int binarySearch(int arr[], int n, int loc, int start, int end)
@@ -116,5 +117,6 @@ void maxMin(int arr[], int n)
         }
     }
     std::cout << "Maximum " << max << ", "
-              << "Minimum " << min << std::endl;
+              << "Minimum " << min << "\n"
+              << std::endl;
 }
