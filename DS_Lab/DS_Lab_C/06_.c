@@ -45,7 +45,10 @@ int main()
         switch (choice)
         {
         case 1:
-            Push();
+            for (int i = 0; i < 5; i++)
+            {
+                Push(i);
+            }
             break;
         case 2:
             Pop();
@@ -62,9 +65,8 @@ int main()
     }
 }
 
-void Push()
+void Push(int x)
 {
-    int x;
 
     if (Top == Size - 1)
     {
