@@ -24,11 +24,6 @@ public:
     }
 };
 
-// std::ostream &operator<<(std::ostream output, Position use)
-// {
-//     return output;
-// }
-
 int main()
 {
     Position pos1, pos2;
@@ -44,7 +39,5 @@ int main()
         std::cout << "Pizza" << std::endl;
     }
 
-    Position use;
-    // std::cout << use << std::endl;
-    return 0;
+        return 0;
 }
