@@ -37,7 +37,7 @@ std::ostream &operator<<(std::ostream &output, const User user)
     return output;
 }
 
-std::istream &operator>>(std::istream &input, User &user)
+std::istream &operator>>(std::istream &input, User user)
 {
     input >> user.first_name >> user.last_name;
     return input;
@@ -58,7 +58,7 @@ int main()
     // user.last_name = "Curry";
     // user.set_status("Silver");
 
-    std::cout << user << std::endl;
+    // std::cout << user << std::endl;
 
     return 0;
 }
