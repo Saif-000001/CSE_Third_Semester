@@ -1,4 +1,5 @@
 // #include <iostream>
+#include <string>
 #ifndef USER_H
 #define USER_H
 class User
