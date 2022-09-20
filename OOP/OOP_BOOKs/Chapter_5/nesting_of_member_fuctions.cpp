@@ -40,22 +40,22 @@ public:
                 s.at(i) = '0';
             }
         }
-        std::cout << s << std::endl;
+        // std::cout << s << std::endl;
     }
 
-    // void display_ones()
-    // {
-    //     ones();
-    //     std::cout << "\nThe 1's complement of the above binary number is : " << s;
-    // }
+    void display_ones()
+    {
+        ones();
+        std::cout << "\nThe 1's complement of the above binary number is : " << s;
+    }
 };
 
 int main()
 {
     Binary b;
     b.read();
-    // b.display_ones();
-    b.ones();
+    b.display_ones();
+    // b.ones();
 
     getch();
     return 0;
