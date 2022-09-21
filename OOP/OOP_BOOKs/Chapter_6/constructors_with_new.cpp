@@ -10,13 +10,13 @@ public:
     String()
     {
         length = 0;
-        name = new char(length + 1);
+        name = new char[length + 1];
     }
 
     String(char *s)
     {
         length = strlen(s);
-        name = new char(length + 1);
+        name = new char[length + 1];
 
         strcpy(name, s);
     }
@@ -34,7 +34,7 @@ void String::join(String &a, String &b)
     length = a.length + b.length;
     delete name;
 
-    name = new char(length + 1);
+    name = new char[length + 1];
 
     strcpy(name, a.name);
     strcpy(name, b.name);
