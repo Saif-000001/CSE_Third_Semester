@@ -3,6 +3,7 @@
 int main()
 {
     int a, b, m = 1;
+    std::cout << "Enter number a and b : ";
     std::cin >> a >> b;
     int l = a;
     if (a < b)
