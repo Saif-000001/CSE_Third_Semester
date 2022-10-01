@@ -3,25 +3,25 @@
 
 int main()
 {
-    int arr[100][100], n, m, q, p1, p2;
+    // int arr[100][100], n, m, q, p1, p2;
 
-    std::cout << "Enter the number : ";
-    std::cin >> n >> q;
+    // std::cout << "Enter the number : ";
+    // std::cin >> n >> q;
 
-    for (int i = 0; i < n; i++)
-    {
-        std::cin >> m;
-        for (int j = 0; j < m; j++)
-        {
-            std::cin >> arr[i][j];
-        }
-    }
+    // for (int i = 0; i < n; i++)
+    // {
+    //     std::cin >> m;
+    //     for (int j = 0; j < m; j++)
+    //     {
+    //         std::cin >> arr[i][j];
+    //     }
+    // }
 
-    for (int i = 0; i < q; i++)
-    {
-        std::cin >> p1 >> p2;
-        std::cout << arr[p1][p2] << std::endl;
-    }
+    // for (int i = 0; i < q; i++)
+    // {
+    //     std::cin >> p1 >> p2;
+    //     std::cout << arr[p1][p2] << std::endl;
+    // }
 
     int n, m;
     std::cin >> n >> m;
