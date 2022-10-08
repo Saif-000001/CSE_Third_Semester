@@ -1,7 +1,8 @@
+
+// Function with argument but no return value
 #include <iostream>
 
-void sumNumber(int n);
-
+void sumNumber(int n); //  argument but no return value
 int main()
 {
     int n;

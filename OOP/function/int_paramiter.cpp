@@ -1,7 +1,8 @@
+
+// Function with argument and return value
 #include <iostream>
 
-int sum(int n); // Function declaration
-
+int sum(int n); // argument and return value
 int main()
 {
     int n;
