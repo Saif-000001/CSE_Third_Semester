@@ -1,27 +1,27 @@
 
+//  pointer to pointer
 #include <iostream>
-
-// Class
-class Employee
-{
-public:
-    std::string Name;              //  member data
-    void setName(std::string name) // Member Functions or method
-    {
-        Name = name;
-    }
-    std::string getName();
-};
-std::string Employee::getName()
-{
-    return Name;
-}
 
 int main()
 {
-    // Declare an object of class Employee
-    Employee employee;
-    employee.setName("MSI");
-    std::cout << employee.getName();
+    int a = 789;
+    // pointer for a
+    int *p1;
+
+    // double pointer for p1
+    int **p2;
+
+    // storing address of a in p1
+    p1 = &a;
+
+    // Storing address of p1 in p2
+    p2 = &p1;
+
+    // Displaying value of var using
+    // both single and double pointers
+    std::cout << "Value of a = " << a << std::endl;
+    std::cout << "Value of a using single pointer = " << *p1 << std::endl;
+    std::cout << "Value of a using double pointer = " << **p2 << std::endl;
+
     return 0;
 }
