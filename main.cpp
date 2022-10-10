@@ -1,27 +1,40 @@
 
-//  pointer to pointer
+// the Virtual Function
 #include <iostream>
 
+class A // Declaring a Base class
+{
+public:
+    virtual void display() // virtual function
+    {
+        std::cout << "Called virtual Base Class function \n\n";
+    }
+    void print()
+    {
+        std::cout << "Called A print function \n\n";
+    }
+};
+class A_Child : public A // Declaring a Child Class
+{
+public:
+    void display()
+    {
+        std::cout << "Called A_Child Display Function \n\n";
+    }
+
+    void print()
+    {
+        std::cout << "Called A_Child print Function \n\n";
+    }
+};
 int main()
 {
-    int a = 789;
-    // pointer for a
-    int *p1;
 
-    // double pointer for p1
-    int **p2;
+    A *base; // Create a reference of class bird
+    A_Child child;
+    base = &child;
 
-    // storing address of a in p1
-    p1 = &a;
+    base->A::display(); // This will call the virtual function
 
-    // Storing address of p1 in p2
-    p2 = &p1;
-
-    // Displaying value of var using
-    // both single and double pointers
-    std::cout << "Value of a = " << a << std::endl;
-    std::cout << "Value of a using single pointer = " << *p1 << std::endl;
-    std::cout << "Value of a using double pointer = " << **p2 << std::endl;
-
-    return 0;
+    base->print(); // this will call the non-virtual function
 }
