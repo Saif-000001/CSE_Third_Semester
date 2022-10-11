@@ -8,8 +8,8 @@
 // Step 8: Print element not found
 // Step 9: Exit
 
+// linearSearch
 #include <iostream>
-using namespace std;
 
 int linearSearch(int arr[], int size, int x);
 
@@ -28,11 +28,11 @@ int main()
     int result = linearSearch(arr, size, x);
     if (result == -1)
     {
-        cout << "Result not found !";
+        std::cout << "Result not found !";
     }
     else
     {
-        cout << "Element of the index : " << linearSearch(arr, size, x);
+        std::cout << "Element of the index : " << linearSearch(arr, size, x);
     }
     return 0;
 }
