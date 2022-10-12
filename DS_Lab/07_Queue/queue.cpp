@@ -84,5 +84,7 @@ int main()
     Q.dequeue();
     Q.dequeue();
 
+    Q.enqueue(3);
+
     return 0;
 }
