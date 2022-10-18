@@ -3,7 +3,9 @@
 int main()
 {
     int x;
-    scanf("%d", &x);
+    char c;
+    // scanf("%d % %", &x, &c);
+    scanf("%d %c", &x, &c);
     printf("%d", x);
     return 0;
 }
