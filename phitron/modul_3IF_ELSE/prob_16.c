@@ -16,4 +16,5 @@ int main()
     {
         printf("This is a special character.");
     }
+    return 0;
 }
