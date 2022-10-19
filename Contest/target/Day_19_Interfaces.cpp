@@ -27,9 +27,11 @@ int main()
 {
     int n;
     std::cin >> n;
-    AdvancedArithmetic *myCalculator;
-    Calculator call;
-    myCalculator = &call;
+    AdvancedArithmetic *myCalculator = new Calculator();
+
+    // Calculator call;
+    // myCalculator = &call;
+
     int sum = myCalculator->divisorSum(n);
     std::cout << sum;
 }
