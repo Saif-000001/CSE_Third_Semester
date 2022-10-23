@@ -1,8 +1,12 @@
 #include <stdio.h>
-
 int main()
 {
-    int a = 10, c = 20;
-    printf("%d0", a * c);
+    for (int i = 10; i >= 0; i--)
+    {
+        if (5 - 5)
+        {
+            printf("ok");
+        }
+    }
     return 0;
 }
