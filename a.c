@@ -1,12 +1,14 @@
 #include <stdio.h>
 int main()
 {
-    for (int i = 10; i >= 0; i--)
+    int a = 0, i = 0;
+    printf("4");
+    for (i = 0; i < 5; i++)
     {
-        if (5 - 5)
-        {
-            printf("ok");
-        }
+        a += 1;
+        if (i == 3)
+            break;
     }
+    printf("%d\n", a);
     return 0;
 }
