@@ -5,13 +5,18 @@ int main()
     int n, m;
     scanf("%d %d", &n, &m);
 
-    for (int i = n; i <= m; i++)
+    while (n != m)
     {
-        printf("%d ", i);
+        printf("%d ", n);
+        if (n == 23)
+        {
+            n = 0;
+        }
+        else
+        {
+            n++;
+        }
     }
-
-    for (int i = m; i <= n; i++)
-    {
-        printf("%d ", i);
-    }
+    printf("%d ", n);
+    return 0;
 }
