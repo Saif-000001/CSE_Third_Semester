@@ -3,12 +3,12 @@
 int main()
 {
     int n = 5;
-    int arr[n];
+    int arr[] = {15, 12, 13, 10, 75};
 
-    for (int i = 0; i < n; i++)
-    {
-        scanf("%d", &arr[i]);
-    }
+    // for (int i = 0; i < n; i++)
+    // {
+    //     scanf("%d", &arr[i]);
+    // }
 
     int m = arr[0];
     for (int i = 0; i < n; i++)
@@ -25,7 +25,7 @@ int main()
     }
     for (int i = 0; i < n; i++)
     {
-        printf("%d ", arr[i]);
+        printf("%d \n", arr[i]);
         m = arr[1];
     }
     printf("Second minimum = %d\n", m);
