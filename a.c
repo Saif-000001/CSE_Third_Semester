@@ -1,14 +1,19 @@
 #include <stdio.h>
+
 int main()
 {
-    int a = 0, i = 0;
-    printf("4");
-    for (i = 0; i < 5; i++)
+    int n, i = 1;
+    scanf("%d", &n);
+    printf("The factors of %d are: ", n);
+    while (n != i)
     {
-        a += 1;
-        if (i == 3)
-            break;
+        if (n % i == 0)
+        {
+            printf("%d, ", i);
+        }
+        i++;
     }
-    printf("%d\n", a);
+    printf("%d.", n);
+
     return 0;
 }

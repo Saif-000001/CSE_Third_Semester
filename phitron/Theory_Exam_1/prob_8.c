@@ -4,16 +4,16 @@ int main()
 {
     int a, b, mod;
     scanf("%d%d", &a, &b);
-    if (a > b)
+    if (a >= b)
     {
         mod = a % b;
         if (mod > 0)
 
             printf("The LCM of %d and %d is %d.", a, b, (a * b) / mod);
         else
-            printf("%d mod not possible!.", mod);
+            printf("The LCM of %d and %d is %d.", a, b, a);
     }
-    else if (b > a)
+    else
     {
         mod = b % a;
         if (mod > 0)
@@ -21,11 +21,8 @@ int main()
             printf("The LCM of %d and %d is %d.", a, b, (b * a) / mod);
 
         else
-            printf("%d mod not possible!.", mod);
+            printf("The LCM of %d and %d is %d.", a, b, b);
     }
-    else
-    {
-        printf("Equal number!.");
-    }
+
     return 0;
 }
