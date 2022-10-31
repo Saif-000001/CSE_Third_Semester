@@ -69,18 +69,53 @@
 //     return 0;
 // }
 
+// #include <stdio.h>
+// int main()
+// {
+//     int arr[5] = {213, 10, 325, 507, 100};
+//     int max = arr[0], i;
+//     for (i = 1; i < 5; i += 1)
+//     {
+//         if (arr[i] > max)
+//         {
+//             max = arr[i];
+//         }
+//     }
+//     printf("%d\n", max);
+//     return 0;
+// }
+
+// #include <stdio.h>
+// int main()
+// {
+//     int arr[3] = {1, 2, 3}, i, j;
+//     for (i = 0; i < 3; i++)
+//     {
+//         for (j = i; j < 3; j++)
+//         {
+//             printf("%d ", arr[j]);
+//         }
+//     }
+//     return 0;
+// }
+
 #include <stdio.h>
 int main()
 {
-    int arr[5] = {213, 10, 325, 507, 100};
-    int max = arr[0], i;
-    for (i = 1; i < 5; i += 1)
+    int arr[5] = {1, 2, 3, 4, 5}, i = 5, j;
+    while (i >= 1)
     {
-        if (arr[i] > max)
+        arr[i - 1] -= i;
+        while (1)
         {
-            max = arr[i];
+            arr[i - 1] += i;
+            break;
         }
+        i -= 1;
     }
-    printf("%d\n", max);
+    for (j = 0; j < 5; j++)
+    {
+        printf("%d ", arr[j]);
+    }
     return 0;
 }
