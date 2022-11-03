@@ -99,23 +99,42 @@
 //     return 0;
 // }
 
+// #include <stdio.h>
+// int main()
+// {
+//     int arr[5] = {1, 2, 3, 4, 5}, i = 5, j;
+//     while (i >= 1)
+//     {
+//         arr[i - 1] -= i;
+//         while (1)
+//         {
+//             arr[i - 1] += i;
+//             break;
+//         }
+//         i -= 1;
+//     }
+//     for (j = 0; j < 5; j++)
+//     {
+//         printf("%d ", arr[j]);
+//     }
+//     return 0;
+// }
+
 #include <stdio.h>
 int main()
 {
-    int arr[5] = {1, 2, 3, 4, 5}, i = 5, j;
-    while (i >= 1)
+    int n1, n2;
+    scanf("%d %d", &n1, &n2);
+    int num1 = n1;
+    int num2 = n2;
+
+    while (n1 != n2)
     {
-        arr[i - 1] -= i;
-        while (1)
-        {
-            arr[i - 1] += i;
-            break;
-        }
-        i -= 1;
+        if (n1 > n2)
+            n1 -= n2;
+        else
+            n2 -= n1;
     }
-    for (j = 0; j < 5; j++)
-    {
-        printf("%d ", arr[j]);
-    }
+    printf("The GCD of %d and %d is %d.", num1, num2, n1);
     return 0;
 }
