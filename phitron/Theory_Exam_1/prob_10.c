@@ -9,7 +9,7 @@ int main()
     {
         if (n % i == 0)
         {
-            sum = i;
+            sum = 1;
             break;
         }
     }
