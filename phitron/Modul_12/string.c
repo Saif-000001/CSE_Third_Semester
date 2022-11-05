@@ -2,10 +2,10 @@
 
 int main()
 {
-    // char name[15];
-    // scanf("%s", name);
+    char name[15];
+    scanf("%s", name);
 
-    char name[15] = {"Farhan Feroz"};
+    // char name[15] = {"Farhan Feroz"};
     // printf("The name is %s ", name);
     name[4] = 'i';
     // name[5] = '\0';

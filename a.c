@@ -123,18 +123,40 @@
 #include <stdio.h>
 int main()
 {
-    int n1, n2;
-    scanf("%d %d", &n1, &n2);
-    int num1 = n1;
-    int num2 = n2;
+    // int n1, n2;
+    // scanf("%d %d", &n1, &n2);
+    // int num1 = n1;
+    // int num2 = n2;
 
-    while (n1 != n2)
+    // while (n1 != n2)
+    // {
+    //     if (n1 > n2)
+    //         n1 -= n2;
+    //     else
+    //         n2 -= n1;
+    // }
+    // printf("The GCD of %d and %d is %d.", num1, num2, n1);
+
+    // char ch = '\0';
+    // printf("%d", ch);
+
+    // char str[] = "Ab";
+    // printf("%c", (str[0] + 32));
+
+    // char str[] = {'P', 'h', 'i', 't', 'r', 'o', 'n'};
+    // printf("%s", str);
+
+    // char str[] = {'P', 'h', 'i', 't', 'r', 'o', 'n', '\0'};
+    // printf("%s", str);
+
+    char str[] = "Programming";
+    int i = 0;
+    while (str[i] != '\0')
     {
-        if (n1 > n2)
-            n1 -= n2;
-        else
-            n2 -= n1;
+        printf("%c ", str[i]);
+        i += 1;
     }
-    printf("The GCD of %d and %d is %d.", num1, num2, n1);
+    printf(".");
+
     return 0;
 }
