@@ -123,19 +123,19 @@
 #include <stdio.h>
 int main()
 {
-    int n1, n2;
-    scanf("%d %d", &n1, &n2);
-    int num1 = n1;
-    int num2 = n2;
+    // int n1, n2;
+    // scanf("%d %d", &n1, &n2);
+    // int num1 = n1;
+    // int num2 = n2;
 
-    while (n1 != n2)
-    {
-        if (n1 > n2)
-            n1 -= n2;
-        else
-            n2 -= n1;
-    }
-    printf("The GCD of %d and %d is %d.", num1, num2, n1);
+    // while (n1 != n2)
+    // {
+    //     if (n1 > n2)
+    //         n1 -= n2;
+    //     else
+    //         n2 -= n1;
+    // }
+    // printf("The GCD of %d and %d is %d.", num1, num2, n1);
 
     // char ch = '\0';
     // printf("%d", ch);
