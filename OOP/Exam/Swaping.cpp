@@ -1,35 +1,57 @@
 #include <iostream>
-
 using namespace std;
 
-class Swap
+class B;
+class A
 {
-    int temp, a, b;
+    int a;
 
 public:
-    Swap(int x, int y)
+    void setData()
     {
-        this->a = x;
-        this->b = y;
+        cin >> a;
     }
 
-    friend void swap(Swap &);
+    void getData()
+    {
+        cout << a << " ";
+    }
+    friend void swap(A &, B &);
 };
 
-void swap(Swap &s)
+class B
 {
-    cout << "Before swapping " << s.a << " " << s.b << endl;
+    int b;
 
-    s.temp = s.a;
-    s.a = s.b;
-    s.b = s.temp;
+public:
+    void setData()
+    {
+        cin >> b;
+    }
+    void getData()
+    {
+        cout << b;
+    }
+    friend void swap(A &, B &);
+};
 
-    cout << "After swapping " << s.a << " " << s.b << endl;
+void swap(A &x, B &y)
+{
+    int temp = x.a;
+    x.a = y.b;
+    y.b = temp;
+    // cout << x.a << " " << y.b << endl;
 }
 
 int main()
 {
-    Swap s(45, 56);
-    swap(s);
-    return 0;
+    A x;
+    B y;
+    x.setData();
+    y.setData();
+
+    swap(x, y);
+
+    x.getData();
+    y.getData();
 }
