@@ -120,43 +120,101 @@
 //     return 0;
 // }
 
+// #include <stdio.h>
+// int main()
+// {
+//     // int n1, n2;
+//     // scanf("%d %d", &n1, &n2);
+//     // int num1 = n1;
+//     // int num2 = n2;
+
+//     // while (n1 != n2)
+//     // {
+//     //     if (n1 > n2)
+//     //         n1 -= n2;
+//     //     else
+//     //         n2 -= n1;
+//     // }
+//     // printf("The GCD of %d and %d is %d.", num1, num2, n1);
+
+//     // char ch = '\0';
+//     // printf("%d", ch);
+
+//     // char str[] = "Ab";
+//     // printf("%c", (str[0] + 32));
+
+//     // char str[] = {'P', 'h', 'i', 't', 'r', 'o', 'n'};
+//     // printf("%s", str);
+
+//     // char str[] = {'P', 'h', 'i', 't', 'r', 'o', 'n', '\0'};
+//     // printf("%s", str);
+
+//     // char str[] = "Programming";
+//     // int i = 0;
+//     // while (str[i] != '\0')
+//     // {
+//     //     printf("%c ", str[i]);
+//     //     i += 1;
+//     // }
+//     // printf(".");
+
+//     return 0;
+// }
+
+// #include <stdio.h>
+// int main()
+// {
+//     double value = (22 / 3.0);
+//     printf("%0.3lf", value);
+//     return 0;
+// }
+
+// #include <stdio.h>
+// int main()
+// {
+//     int num = 10;
+//     int a = num / -4;
+//     int b = num % -4;
+//     printf("%d %d\n", a, b);
+//     return 0;
+// }
+
+// #include <stdio.h>
+// int main()
+// {
+//     int x = 1, y = -1;
+//     printf("%d", (x != 7) && (x <= y));
+//     return 0;
+// }
+
+// #include <stdio.h>
+// int main()
+// {
+//     int i = 0;
+//     for (i)
+//     {
+//         printf("Phitron");
+//     }
+//     return 0;
+// }
+
+// #include <stdio.h>
+// int main()
+// {
+//     int ar[] = {2, 4, 6, 8};
+
+//     ar[0] = 23;
+//     ar[3] = ar[1];
+//     printf("%d%d", ar[0], ar[3]);
+//     return 0;
+// }
+
 #include <stdio.h>
 int main()
 {
-    // int n1, n2;
-    // scanf("%d %d", &n1, &n2);
-    // int num1 = n1;
-    // int num2 = n2;
-
-    // while (n1 != n2)
-    // {
-    //     if (n1 > n2)
-    //         n1 -= n2;
-    //     else
-    //         n2 -= n1;
-    // }
-    // printf("The GCD of %d and %d is %d.", num1, num2, n1);
-
-    // char ch = '\0';
-    // printf("%d", ch);
-
-    // char str[] = "Ab";
-    // printf("%c", (str[0] + 32));
-
-    // char str[] = {'P', 'h', 'i', 't', 'r', 'o', 'n'};
-    // printf("%s", str);
-
-    // char str[] = {'P', 'h', 'i', 't', 'r', 'o', 'n', '\0'};
-    // printf("%s", str);
-
-    // char str[] = "Programming";
-    // int i = 0;
-    // while (str[i] != '\0')
-    // {
-    //     printf("%c ", str[i]);
-    //     i += 1;
-    // }
-    // printf(".");
+    int array[2][3] = {{10, 20, 30}, {40, 50, 60}}, i = 1, j = 0;
+    array[i][j] = array[j][i];
+    printf("%d,%d", array[i][j], array[j + 1][i + 1]);
 
     return 0;
 }
