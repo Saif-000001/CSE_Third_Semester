@@ -14,19 +14,17 @@ int main()
     }
     for (i = 0; i < row; i++)
     {
-        for (j = 0; j < col - i; j++)
+        for (j = 0; j < col; j++)
         {
-            if (arr[i] == arr[j])
+            if (arr[i][j] == i + 1 && arr[i][j] == j + 1)
             {
                 arr[i][j] += 3;
             }
-
-            if (arr[i][j] == i)
+            else if (arr[i][j] == i + 1 && arr[i][j] != j + 1)
             {
                 arr[i][j] += 2;
             }
-
-            if (arr[i][j] == j)
+            else if (arr[i][j] != i + 1 && arr[i][j] == j + 1)
             {
                 arr[i][j] += 1;
             }

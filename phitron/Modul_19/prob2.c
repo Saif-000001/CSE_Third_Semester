@@ -8,10 +8,9 @@ int main()
 
     int a, b;
     scanf("%d%d", &a, &b);
-    int sum = 0;
-    int mult = 0;
+    long long int sum = 0;
 
-    for (int i = 0; i <= sizeof(s); i++)
+    for (int i = 0; i <= strlen(s); i++)
     {
         if (s[i] == '+')
         {
@@ -19,12 +18,12 @@ int main()
         }
         else if (s[i] == '*')
         {
-            mult += a * b;
+            sum += a * b;
         }
     }
 
-    int summation = sum + mult;
-    printf("%d\n", summation);
+    // int summation = sum + mult;
+    printf("%lld\n", sum);
 
     return 0;
 }
