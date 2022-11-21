@@ -219,15 +219,49 @@
 //     return 0;
 // }
 
-#include <stdio.h>
+// #include <stdio.h>
 
-void getSum()
-{
-    int a = 10, b = 5;
-    printf("%d", a + b);
-}
+// void getSum()
+// {
+//     int a = 10, b = 5;
+//     printf("%d", a + b);
+// }
+// int main()
+// {
+//     printf("ok");
+//     return 0;
+// }
+
+// #include <stdio.h>
+// int addition();
+
+// int main()
+// {
+//     int result;
+//     result = addition();
+//     printf("%d", result * 2);
+//     return 0;
+// }
+
+// int addition()
+// {
+//     int num1 = 10, num2 = 5;
+//     return num1 + num2;
+// }
+
+#include <stdio.h>
+int addition();
+
 int main()
 {
-    printf("ok");
+    int result;
+    result = addition();
+    printf("%d", result * 2);
     return 0;
+}
+
+int addition()
+{
+    int num1 = 10, num2 = 5;
+    return num1 + num2;
 }
