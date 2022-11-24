@@ -61,3 +61,37 @@ int main()
 //         }
 //     }
 // }
+
+// while (1)
+// {
+//     int f = 0;
+//     for (int k = 2; k < temp; k++)
+//     {
+//         if (temp % k == 0)
+//         {
+//             f = 1;
+//             break;
+//             ;
+//         }
+//     }
+//     if (f)
+//         temp++;
+//     else
+//     {
+//         break;
+//     }
+// }
+// return temp;
+// }
+
+// void print_pattren(int n){
+//     int p = 1;
+//     for(int i = 1; i <= n; i++){
+//         for(int j = 1; j<=i; j++){
+//             int temp = get_prime(p);
+//             printf("%d ", temp);
+//             p = temp;
+//         }
+//         printf("\n");
+//     }
+// }
