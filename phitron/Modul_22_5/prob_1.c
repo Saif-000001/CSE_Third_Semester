@@ -1,24 +1,33 @@
 #include <stdio.h>
+#include <string.h>
 
-char string(char arr[], int n)
+int strF(char ch[], int n)
 {
-    for (int i = 0; i < n; i++)
+    int flog = 1;
+
+    for (int i = 0; i < strlen(ch); i++)
     {
-        if (arr[i] == '0' || arr[i] == '1')
-            return '1';
-        else
-            return '0';
+        if (ch[i] != '0' && ch[i] != '1')
+        {
+            flog = 0;
+            break;
+        }
     }
+    return flog;
 }
+
 int main()
 {
-    // char arr[] = {"011110"};
-    char arr[] = {"aB1Bsi1001sd"};
-    int n = sizeof(arr) / sizeof(char);
-    char ans = string(arr, n);
-    if (ans == '1')
-        printf("YES\n");
+    char str[100];
+    scanf("%s", str);
+
+    int len = strF(str, 100);
+    if (len == 1)
+    {
+        printf("YES");
+    }
     else
-        printf("NO\n");
-    return 0;
+    {
+        printf("NO");
+    }
 }
