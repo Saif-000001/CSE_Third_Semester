@@ -27,7 +27,6 @@ int main()
     }
 
     transposeMatrix(arr, trans, n, m);
-
     return 0;
 }
 

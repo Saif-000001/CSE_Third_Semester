@@ -1,15 +1,18 @@
 #include <stdio.h>
 #include <string.h>
 
-int stringArray(char str[]);
+int SearchDigit(char str[], char ch);
 
 int main()
 {
     char str[100];
-    scanf("%s", &str);
+    scanf("%s", str);
+    int a = 0, b = 0, c = 0;
+    a = SearchDigit(str, '1');
+    b = SearchDigit(str, '7');
+    c = SearchDigit(str, '9');
 
-    int string = stringArray(str);
-    if (string == 1)
+    if (a && b && c)
     {
         printf("YES");
     }
@@ -19,18 +22,17 @@ int main()
     }
 }
 
-int stringArray(char str[])
+int SearchDigit(char str[], char ch)
 {
-    int flog = 1;
+    int flog = 0;
 
-    for (int i = 1; i <= strlen(str); i++)
-
+    for (int i = 0; i < strlen(str); i++)
     {
-
-        if (str[i] != '1' && str[i] != '9' && str[i] != '7')
+        if (str[i] == ch)
         {
-            flog = 0;
+            flog = 1;
+            break;
         }
     }
-    return 1;
+    return flog;
 }

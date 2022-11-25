@@ -9,8 +9,17 @@ int main()
 
     for (int i = 0; ch[i] != 0; i++)
     {
-
-        ch[i] += x;
+        char d = 'z' - ch[i];
+        if (d >= x)
+        {
+            ch[i] += x;
+        }
+        else
+        {
+            ch[i] += d;
+            char d2 = x - d;
+            ch[i] = ('a' + d2) - 1;
+        }
     }
 
     printf("%s ", ch);

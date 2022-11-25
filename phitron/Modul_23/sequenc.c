@@ -2,31 +2,33 @@
 
 int main()
 {
-    int n;
-    scanf("%d", &n);
-    int arr[100];
-    int arr2[100];
-    int sum[100];
-    int sum1, sum2, i;
-    for (i = 1; i <= n; i++)
+    int n, x;
+    scanf("%d%d", &n, &x);
+    int arr[n], index = 0;
+    int i;
+    for (i = 0; i <= n; i++)
     {
         if (i % 2 == 0)
         {
-            arr[i] = i;
-
-            printf("%d ", arr[i]);
+            arr[index] = i;
+            index++;
         }
     }
-    for (i = 1; i <= n; i++)
+
+    for (i = 0; i <= n; i++)
     {
         if (i % 2 == 1)
         {
-            arr[i] = i;
-            printf("%d ", arr[i]);
+            arr[index] = i;
+            index++;
         }
     }
-    // sum[i] = arr[i];
 
-    printf("\nThe 9th element in this sequence is %d", arr[9]);
+    for (i = 1; i < n; i++)
+    {
+        printf("%d ", arr[i]);
+    }
+    printf("\n");
+    printf("\nThe %dth element in this sequence is %d", x, arr[x]);
     return 0;
 }
