@@ -6,8 +6,9 @@ void stringSwap(char str[]);
 int main()
 {
     char str[100];
+    scanf("%s", &str);
 
-    gets(str);
+    // gets(str);
 
     stringSwap(str);
 

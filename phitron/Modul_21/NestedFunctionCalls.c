@@ -17,7 +17,7 @@ int main()
 float f(int x, int y)
 {
     int temp = absolute(x - 3) + (y + 4) * (y + 4);
-    ;
+
     return sqrt(temp);
 }
 
