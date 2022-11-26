@@ -249,19 +249,35 @@
 //     return num1 + num2;
 // }
 
-#include <stdio.h>
-int addition();
+// #include <stdio.h>
+// int addition();
 
+// int main()
+// {
+//     int result;
+//     result = addition();
+//     printf("%d", result * 2);
+//     return 0;
+// }
+
+// int addition()
+// {
+//     int num1 = 10, num2 = 5;
+//     return num1 + num2;
+// }
+
+#include <stdio.h>
+void fun(int n)
+{
+    if (n > 0)
+    {
+        fun(n - 1);
+        printf("%d ", n);
+    }
+}
 int main()
 {
-    int result;
-    result = addition();
-    printf("%d", result * 2);
+    int x = 4;
+    fun(x);
     return 0;
-}
-
-int addition()
-{
-    int num1 = 10, num2 = 5;
-    return num1 + num2;
 }
