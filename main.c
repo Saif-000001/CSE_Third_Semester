@@ -7,16 +7,16 @@ int main()
     int arr[n][m];
     for (i = 0; i < n; i++)
     {
-        int a = 0, b = 0;
+        int a = 1, b = 1;
         for (j = 0; j < m; j++)
         {
             scanf("%d", &arr[i][j]);
         }
         for (int j = 0; j < m; j++)
         {
-            int temp = arr[i][j];
-            arr[i][j] = arr[j][i];
-            arr[j][i] = temp;
+            int temp = arr[j][i];
+            arr[j][i] = arr[i][j];
+            arr[i][j] = temp;
         }
     }
     printf("Transpose Matrix \n");
