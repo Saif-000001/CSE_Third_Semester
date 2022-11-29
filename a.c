@@ -294,15 +294,60 @@
 //     return 0;
 // }
 
+// #include <stdio.h>
+// int value = 3;
+// void foo(int n)
+// {
+//     value *= 2;
+// }
+// int main()
+// {
+//     printf("%d \n", value);
+//     foo(2);
+//     return 0;
+// }
+
+// #include <stdio.h>
+// int main()
+// {
+//     int a[3] = {80, 30, 100};
+//     printf("%d", *(a + 1));
+// }
+
+// #include <stdio.h>
+// void func(int x)
+// {
+//     x = 80;
+// }
+// int main()
+// {
+//     int y = 50;
+//     func(y);
+//     printf("%d", y);
+//     return 0;
+// }
+
+// #include <stdio.h>
+
+// void func(int *x)
+// {
+//     *x = 80;
+// }
+// int main()
+// {
+
+//     int y = 50;
+//     func(&y);
+//     printf("%d", y);
+//     return 0;
+// }
+
 #include <stdio.h>
-int value = 3;
-void foo(int n)
-{
-    value *= 2;
-}
 int main()
 {
-    printf("%d \n", value);
-    foo(2);
+    int x = 10, *ptr;
+    ptr = &x;
+    *ptr += 2;
+    printf("%d, %d", *ptr, x);
     return 0;
 }
