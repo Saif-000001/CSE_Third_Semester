@@ -12,7 +12,7 @@ int main()
 
 void recursion(int n)
 {
-    if (n == 1)
+    if (n != 0)
     {
         printf("%d ", n);
     }
