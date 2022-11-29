@@ -1,23 +1,24 @@
 #include <stdio.h>
 
-int recursion(int n);
+void recursion(int n);
 
 int main()
 {
     int n;
     scanf("%d", &n);
-    int ans = recursion(n);
-    for (int i = 0; i < n; i++)
-    {
-        printf("%d ", ans);
-    }
+
+    recursion(n);
 }
 
-int recursion(int n)
+void recursion(int n)
 {
     if (n == 1)
     {
-        return 1;
+        printf("%d ", n);
     }
-    return recursion(n - 1);
+    else
+    {
+        printf("%d ", n);
+        recursion(n - 1);
+    }
 }
