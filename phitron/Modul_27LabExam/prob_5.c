@@ -1,5 +1,26 @@
 #include <stdio.h>
 
+int totalSum(int arr[], int n)
+{
+    int sum = 0;
+    for (int i = 1; i <= n; i++)
+    {
+        if (arr[i] % 2 == 0 && i % 2 == 0 || arr[i] % 2 == 1 && i % 2 == 1)
+        {
+            sum += arr[i] + i;
+        }
+    }
+
+    if (sum)
+    {
+        return sum;
+    }
+    else
+    {
+        return 0;
+    }
+}
+
 int main()
 {
     int n;
@@ -9,14 +30,6 @@ int main()
     {
         scanf("%d", &arr[i]);
     }
-    int sum = 0;
-    for (int i = 1; i <= n; i++)
-    {
-        if (arr[i] % 2 == 0 && i % 2 == 0 || arr[i] % 2 == 1 && i % 2 == 1)
-        {
-            sum += arr[i] + i;
-        }
-    }
-    printf("%d\n", sum);
+    printf("%d\n", totalSum(arr, n));
     return 0;
 }

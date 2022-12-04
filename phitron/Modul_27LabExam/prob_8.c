@@ -5,9 +5,9 @@ void func(char str[], int n)
 {
     char ch[n];
     int index = 0;
-    for (int i = 1; i <= n; i++)
+    for (int i = 0; i <= n; i++)
     {
-        if (i % 2 == 0)
+        if (i % 2 != 0)
         {
             ch[index] = str[i];
             index++;
@@ -20,7 +20,7 @@ void func(char str[], int n)
             index++;
         }
     }
-    printf("%s ", ch);
+    printf("%s", ch);
 }
 
 int main()

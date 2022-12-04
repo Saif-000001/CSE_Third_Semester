@@ -1,29 +1,53 @@
 #include <stdio.h>
 
-int divideThree(int arr[], int n)
+int divideThree(int n)
 {
-    int count = 0;
+    int f = 0;
     for (int i = 0; i < n; i++)
     {
-        if (arr[i] % 3 == 0)
+        if (n % 3 == 0)
         {
-            count++;
+            f = 1;
         }
     }
-    return count;
+    return f;
 }
 
-int divideFive(int arr[], int n)
+int divideFive(int n)
 {
-    int count = 0;
+    int f = 0;
     for (int i = 0; i < n; i++)
     {
-        if (arr[i] % 5 == 0 && arr[i] % 3 != 0)
+        if (n % 5 == 0 && n % 3 != 0)
         {
-            count++;
+            f = 1;
         }
     }
-    return count;
+    return f;
+}
+
+int totalSum(int arr[], int n)
+{
+    int count = 0;
+    int count1 = 0, count2 = 0;
+    for (int i = 0; i < n; i++)
+    {
+        count1 = divideThree(arr[i]);
+        if (count1 == 1)
+            count++;
+        count2 = divideFive(arr[i]);
+        if (count2 == 1)
+            count++;
+    }
+
+    if (count)
+    {
+        return count;
+    }
+    else
+    {
+        return -1;
+    }
 }
 int main()
 {
@@ -35,10 +59,7 @@ int main()
         scanf("%d", &arr[i]);
     }
 
-    int ans = divideFive(arr, n) + divideThree(arr, n);
-    if (ans)
-        printf("%d\n", ans);
-    else
-        printf("-1\n");
+    int total = totalSum(arr, n);
+    printf("%d\n", total);
     return 0;
 }
