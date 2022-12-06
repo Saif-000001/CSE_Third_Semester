@@ -14,10 +14,6 @@ struct Triangle
     struct Point C;
 };
 
-struct Circale
-{
-    struct Point l;
-};
 struct Point center(struct Triangle t)
 {
     struct Point ans;
